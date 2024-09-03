@@ -25,8 +25,6 @@ string Correcter(string& str);
 // Задает значения полей класса Book
 void Book::SetValues() {  
 
-	setlocale(LC_ALL, "RU");
-
 	string name, nameCorrect, author, authorCorrect, publisher, stock;
 	bool val;
 	bool tryBool = true;

@@ -335,10 +335,10 @@ void EditBook(vector<Book>& allBooks) {
 				allBooks.push_back(N);
 				allBooks.shrink_to_fit();
 
-				sort(allBooks.begin(), allBooks.end(), [](const Book& a, const Book& b) {					  // Сортируем вектор по названию книги
+				sort(allBooks.begin(), allBooks.end(), [](const Book& a, const Book& b) {	// Сортируем вектор по названию книги
 					return compareByNumber(a, b.GetNumber()); });
 
-				for (int i = 0; i < bookQuantuty; i++) {					// Заносим в файл обновленный список книг
+				for (int i = 0; i < bookQuantuty; i++) {									// Заносим в файл обновленный список книг
 					AddBook(allBooks[i], allBooksNew);
 				}
 				allBooks.clear();
@@ -354,7 +354,7 @@ void EditBook(vector<Book>& allBooks) {
 			cout << endl << "Книга успешно изменена." << endl;
 	}
 	else {
-		cout << "\nКнига №\"" << number << "\" не найдена." << endl;						  // Выводим сообщение, что книга не найдена
+		cout << "\nКнига №\"" << number << "\" не найдена." << endl;					 // Выводим сообщение, что книга не найдена
 		return;
 	}
 

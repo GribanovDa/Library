@@ -7,7 +7,6 @@ int main()
     SetConsoleCP(1251);                                 // Устанавливаем кодировку ввода (CP1251)
     SetConsoleOutputCP(1251);                           // Устанавливаем кодировку вывода (CP1251)
     
-    
 
     DisplayInfo();
     vector<Book> allBooks = GetAllFromFile();           // Список из всех книг
