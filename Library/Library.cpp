@@ -18,6 +18,7 @@ int main()
     bool exit = true;
     
 
+
     while (exit) {
         cout << endl << "Список возможных команд - цифра 7." << endl << "Введите необходимую команду: ";
         getline(cin, choice);
